@@ -1,0 +1,49 @@
+.inicio {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    background-color: var(--cor-prim-dark);
+    width: 100%;
+}
+
+#logo img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.inicio > p  {
+    font-family: 'Special Elite', cursive;
+    color: var(--cor-sec-azul);
+    font-size: 32px;
+    text-transform: uppercase;
+    padding: 0 3rem;
+}
+
+#btn  {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    color: var(--cor-branca);
+    background-color: var(--cor-sec-azul);
+    font-weight: 600;
+    border: 1.2px solid var(--cor-sec-azul);
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    background-color: transparent;
+    color: var(--cor-sec-azul);
+}

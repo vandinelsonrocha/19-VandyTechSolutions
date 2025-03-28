@@ -1,0 +1,110 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#servicos  {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    background-color: var(--cor-prim-dark);
+    color: var(--cor-branca);
+}
+
+#servicos > p  {
+    padding: 0 3rem;
+    text-align: center;
+    font-size: 1.3em;
+}
+#servicos > p ion-icon  {
+    margin-left: 10px;
+    transform: translateY(2.4px);
+}
+
+#lista-servicos  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2.5rem;
+    row-gap: 1.5rem;
+}
+
+#lista-servicos > li {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--cor-sec-azul);
+    font-weight: 600;
+    border: 1.2px solid var(--cor-sec-azul);
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+#lista-servicos > li:hover *  {
+    color: var(--cor-branca);
+    background-color: var(--cor-sec-azul);
+}
+
+#lista-servicos > li:hover  {
+    background-color: var(--cor-sec-azul);
+}
+
+#lista-servicos > li a  {
+    color: var(--cor-sec-azul);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+}
+
+footer  {
+    background-color: var(--cor-terc-dark);
+}
+
+#footer-navegacao  {
+    display: flex;
+    padding: 1.3rem 3.5rem 0 3.5rem;
+    justify-content: space-between;
+    color: var(--cor-branca);
+}
+
+#localizacao > address, #localizacao > p  {
+    margin-bottom: 1rem;
+}
+
+#navegacao  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4.5rem;
+}
+
+#navegacao > a  {
+    color: var(--cor-branca);
+}
+
+#navegacao > a:hover  {
+    text-decoration: underline;
+}
+
+#apps-contato  {
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+    font-size: 1.7em;
+    padding: 1rem 0;
+}
+
+#apps-contato > li > a:hover  {
+    opacity: .5;
+}
+
+#rights-reserved  {
+    text-align: center;
+    padding: 1rem 0;
+    color: gray;
+    border-top: 1.2px solid gray;
+}

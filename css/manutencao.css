@@ -1,0 +1,8 @@
+#manutencao  {
+    background-color: var(--cor-prim-dark);
+    padding: 2rem;
+}
+
+#manutencao *  {
+    color: var(--cor-branca);
+}
